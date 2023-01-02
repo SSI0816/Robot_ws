@@ -13,3 +13,6 @@
 
 * turtlesim_node 실행 후 teleop 으로 움직임 확인.
 * turtlesim_node 실행 후 rqt 의 node graph, message publisher 으로 움직임 확인.
+
+* ROS2 파이썬 패키지 만들기:
+    * 파이썬 패키지 : ros2 pkg create --build-type ament_python (패키지이름)
