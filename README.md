@@ -1,6 +1,6 @@
-'''
+---
 # 2023_1_2
-'''
+---
 * 우분트 설치(20.04ver) Vmware 안에 설치.
     * image 주소 : https://releases.ubuntu.com/focal/ 데스크탑 버전 설치
 
