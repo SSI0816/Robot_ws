@@ -1,0 +1,5 @@
+[console_scripts]
+msgp = mt_pubsub.msgpub:main
+mtp = mt_pubsub.mtpub:main
+mts = mt_pubsub.mtsub:main
+

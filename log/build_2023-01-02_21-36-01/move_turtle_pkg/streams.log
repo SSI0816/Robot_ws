@@ -1,0 +1,25 @@
+[1.115s] Invoking command in '/home/ubumtu/robot_ws/build/move_turtle_pkg': PYTHONPATH=/home/ubumtu/robot_ws/build/move_turtle_pkg/prefix_override:/home/ubumtu/robot_ws/install/move_turtle_pkg/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/ubumtu/robot_ws/build/move_turtle_pkg/build --no-deps install_data
+[1.419s] running develop
+[1.595s] running egg_info
+[1.595s] creating move_turtle_pkg.egg-info
+[1.596s] writing move_turtle_pkg.egg-info/PKG-INFO
+[1.597s] writing dependency_links to move_turtle_pkg.egg-info/dependency_links.txt
+[1.597s] writing entry points to move_turtle_pkg.egg-info/entry_points.txt
+[1.598s] writing requirements to move_turtle_pkg.egg-info/requires.txt
+[1.598s] writing top-level names to move_turtle_pkg.egg-info/top_level.txt
+[1.600s] writing manifest file 'move_turtle_pkg.egg-info/SOURCES.txt'
+[1.642s] reading manifest file 'move_turtle_pkg.egg-info/SOURCES.txt'
+[1.643s] writing manifest file 'move_turtle_pkg.egg-info/SOURCES.txt'
+[1.689s] running build_ext
+[1.690s] Creating /home/ubumtu/robot_ws/install/move_turtle_pkg/lib/python3.8/site-packages/site.py
+[1.692s] Creating /home/ubumtu/robot_ws/install/move_turtle_pkg/lib/python3.8/site-packages/move-turtle-pkg.egg-link (link to .)
+[1.694s] Installing move_turtle script to /home/ubumtu/robot_ws/install/move_turtle_pkg/lib/move_turtle_pkg
+[1.695s] 
+[1.695s] Installed /home/ubumtu/robot_ws/build/move_turtle_pkg
+[1.695s] running install_data
+[1.696s] creating /home/ubumtu/robot_ws/install/move_turtle_pkg/share/ament_index
+[1.696s] creating /home/ubumtu/robot_ws/install/move_turtle_pkg/share/ament_index/resource_index
+[1.696s] creating /home/ubumtu/robot_ws/install/move_turtle_pkg/share/ament_index/resource_index/packages
+[1.697s] copying resource/move_turtle_pkg -> /home/ubumtu/robot_ws/install/move_turtle_pkg/share/ament_index/resource_index/packages
+[1.697s] copying package.xml -> /home/ubumtu/robot_ws/install/move_turtle_pkg/share/move_turtle_pkg
+[1.736s] Invoked command in '/home/ubumtu/robot_ws/build/move_turtle_pkg' returned '0': PYTHONPATH=/home/ubumtu/robot_ws/build/move_turtle_pkg/prefix_override:/home/ubumtu/robot_ws/install/move_turtle_pkg/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/ubumtu/robot_ws/build/move_turtle_pkg/build --no-deps install_data

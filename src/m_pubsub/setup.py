@@ -20,8 +20,10 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'mp = m_pubsub.mpub.main',
-            'ms = m_pubsub.msub.main'
+            'mp = m_pubsub.mpub:main',
+            'ms = m_pubsub.msub:main',
+            'mst = m_pubsub.messagetime:main',
+            'mts = m_pubsub.mt_sub:main'
         ],
     },
 )

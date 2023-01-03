@@ -1,0 +1,25 @@
+running develop
+running egg_info
+creating mt_pubsub.egg-info
+writing mt_pubsub.egg-info/PKG-INFO
+writing dependency_links to mt_pubsub.egg-info/dependency_links.txt
+writing entry points to mt_pubsub.egg-info/entry_points.txt
+writing requirements to mt_pubsub.egg-info/requires.txt
+writing top-level names to mt_pubsub.egg-info/top_level.txt
+writing manifest file 'mt_pubsub.egg-info/SOURCES.txt'
+reading manifest file 'mt_pubsub.egg-info/SOURCES.txt'
+writing manifest file 'mt_pubsub.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/ubumtu/robot_ws/install/mt_pubsub/lib/python3.8/site-packages/site.py
+Creating /home/ubumtu/robot_ws/install/mt_pubsub/lib/python3.8/site-packages/mt-pubsub.egg-link (link to .)
+Installing msgp script to /home/ubumtu/robot_ws/install/mt_pubsub/lib/mt_pubsub
+Installing mtp script to /home/ubumtu/robot_ws/install/mt_pubsub/lib/mt_pubsub
+Installing mts script to /home/ubumtu/robot_ws/install/mt_pubsub/lib/mt_pubsub
+
+Installed /home/ubumtu/robot_ws/build/mt_pubsub
+running install_data
+creating /home/ubumtu/robot_ws/install/mt_pubsub/share/ament_index
+creating /home/ubumtu/robot_ws/install/mt_pubsub/share/ament_index/resource_index
+creating /home/ubumtu/robot_ws/install/mt_pubsub/share/ament_index/resource_index/packages
+copying resource/mt_pubsub -> /home/ubumtu/robot_ws/install/mt_pubsub/share/ament_index/resource_index/packages
+copying package.xml -> /home/ubumtu/robot_ws/install/mt_pubsub/share/mt_pubsub
