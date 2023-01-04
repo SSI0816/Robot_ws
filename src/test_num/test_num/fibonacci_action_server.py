@@ -7,10 +7,7 @@ from test_interface.action import Fibonacci
 class FibonacciActionServer(Node):
   def __init__(self):
     super().__init__('fibonacci_action_server')
-    self.action_server = ActionServer(self, Fibonacci,
-    'fibonacci',
-    self.fibo_call
-    )
+    self.action_server = ActionServer(self, Fibonacci,'fibonacci',self.fibo_call)
 
   def fibo_call(self, goal_handle):
     feedback_msg = Fibonacci.Feedback()
