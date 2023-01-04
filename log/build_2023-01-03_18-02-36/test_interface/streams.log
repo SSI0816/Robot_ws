@@ -1,0 +1,54 @@
+[0.319s] Invoking command in '/home/ubumtu/robot_ws/build/test_interface': /usr/bin/cmake /home/ubumtu/robot_ws/src/test_interface -DCMAKE_INSTALL_PREFIX=/home/ubumtu/robot_ws/install/test_interface
+[0.341s] -- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.376s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.376s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.611s] -- Found rosidl_default_generators: 1.0.1 (/opt/ros/foxy/share/rosidl_default_generators/cmake)
+[0.614s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.619s] -- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.784s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.855s] -- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") 
+[1.095s] CMake Error at /opt/ros/foxy/share/rosidl_adapter/cmake/rosidl_adapt_interfaces.cmake:60 (message):
+[1.095s]   execute_process(/usr/bin/python3 -m rosidl_adapter --package-name
+[1.095s]   test_interface --arguments-file
+[1.095s]   /home/ubumtu/robot_ws/build/test_interface/rosidl_adapter__arguments__test_interface.json
+[1.096s]   --output-dir
+[1.096s]   /home/ubumtu/robot_ws/build/test_interface/rosidl_adapter/test_interface
+[1.096s]   --output-file
+[1.096s]   /home/ubumtu/robot_ws/build/test_interface/rosidl_adapter/test_interface.idls)
+[1.097s]   returned error code 1:
+[1.097s] 
+[1.097s]   Error processing 'float floatnum' of 'test_interface/Intfloat': ''float' is
+[1.097s]   an invalid message name.  It should have the pattern '^[A-Z][A-Za-z0-9]*$''
+[1.097s] 
+[1.098s]   Traceback (most recent call last):
+[1.098s] 
+[1.098s]     File "/usr/lib/python3.8/runpy.py", line 194, in _run_module_as_main
+[1.098s]       return _run_code(code, main_globals, None,
+[1.098s]     File "/usr/lib/python3.8/runpy.py", line 87, in _run_code
+[1.099s]       exec(code, run_globals)
+[1.099s]     File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_adapter/__main__.py", line 19, in <module>
+[1.099s]       sys.exit(main())
+[1.099s]     File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_adapter/main.py", line 53, in main
+[1.099s]       abs_idl_file = convert_to_idl(
+[1.099s]     File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_adapter/__init__.py", line 19, in convert_to_idl
+[1.100s]       return convert_msg_to_idl(
+[1.100s]     File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_adapter/msg/__init__.py", line 28, in convert_msg_to_idl
+[1.100s]       msg = parse_message_string(package_name, input_file.stem, content)
+[1.100s]     File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_adapter/parser.py", line 516, in parse_message_string
+[1.100s]       Type(type_string, context_package_name=pkg_name),
+[1.100s]     File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_adapter/parser.py", line 276, in __init__
+[1.101s]       super(Type, self).__init__(
+[1.101s]     File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_adapter/parser.py", line 204, in __init__
+[1.101s]       raise InvalidResourceName(
+[1.101s] 
+[1.101s]   rosidl_adapter.parser.InvalidResourceName: 'float' is an invalid message
+[1.103s]   name.  It should have the pattern '^[A-Z][A-Za-z0-9]*$'
+[1.104s] 
+[1.104s] Call Stack (most recent call first):
+[1.104s]   /opt/ros/foxy/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:130 (rosidl_adapt_interfaces)
+[1.104s]   CMakeLists.txt:22 (rosidl_generate_interfaces)
+[1.104s] 
+[1.104s] 
+[1.105s] -- Configuring incomplete, errors occurred!
+[1.105s] See also "/home/ubumtu/robot_ws/build/test_interface/CMakeFiles/CMakeOutput.log".
+[1.106s] Invoked command in '/home/ubumtu/robot_ws/build/test_interface' returned '1': /usr/bin/cmake /home/ubumtu/robot_ws/src/test_interface -DCMAKE_INSTALL_PREFIX=/home/ubumtu/robot_ws/install/test_interface

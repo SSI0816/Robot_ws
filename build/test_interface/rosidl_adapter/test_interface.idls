@@ -1,0 +1,4 @@
+/home/ubumtu/robot_ws/build/test_interface/rosidl_adapter/test_interface:msg/Intfloat.idl
+/home/ubumtu/robot_ws/build/test_interface/rosidl_adapter/test_interface:srv/AddThreeInts.idl
+/home/ubumtu/robot_ws/build/test_interface/rosidl_adapter/test_interface:srv/MinusThreeInts.idl
+/home/ubumtu/robot_ws/build/test_interface/rosidl_adapter/test_interface:action/Fibonacci.idl

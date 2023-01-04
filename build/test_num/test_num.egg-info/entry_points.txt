@@ -1,0 +1,7 @@
+[console_scripts]
+mcm = test_num.test_service_client_minus:main
+mfa = test_num.fibonacci_action_server:main
+mfc = test_num.fibonacci_action_client:main
+msc = test_num.test_service_client:main
+mss = test_num.test_service_ser1:main
+

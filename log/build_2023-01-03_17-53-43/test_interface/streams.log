@@ -1,0 +1,53 @@
+[0.313s] Invoking command in '/home/ubumtu/robot_ws/build/test_interface': /usr/bin/cmake /home/ubumtu/robot_ws/src/test_interface -DCMAKE_INSTALL_PREFIX=/home/ubumtu/robot_ws/install/test_interface
+[0.333s] -- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.370s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.607s] -- Found rosidl_default_generators: 1.0.1 (/opt/ros/foxy/share/rosidl_default_generators/cmake)
+[0.610s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.614s] -- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.776s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.842s] -- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") 
+[1.130s] CMake Error at /opt/ros/foxy/share/rosidl_adapter/cmake/rosidl_adapt_interfaces.cmake:60 (message):
+[1.130s]   execute_process(/usr/bin/python3 -m rosidl_adapter --package-name
+[1.130s]   test_interface --arguments-file
+[1.130s]   /home/ubumtu/robot_ws/build/test_interface/rosidl_adapter__arguments__test_interface.json
+[1.130s]   --output-dir
+[1.131s]   /home/ubumtu/robot_ws/build/test_interface/rosidl_adapter/test_interface
+[1.131s]   --output-file
+[1.131s]   /home/ubumtu/robot_ws/build/test_interface/rosidl_adapter/test_interface.idls)
+[1.131s]   returned error code 1:
+[1.131s] 
+[1.131s]   Error processing 'int intnum' of 'test_interface/Intfloat': ''int' is an
+[1.132s]   invalid message name.  It should have the pattern '^[A-Z][A-Za-z0-9]*$''
+[1.132s] 
+[1.132s]   Traceback (most recent call last):
+[1.132s] 
+[1.133s]     File "/usr/lib/python3.8/runpy.py", line 194, in _run_module_as_main
+[1.133s]       return _run_code(code, main_globals, None,
+[1.133s]     File "/usr/lib/python3.8/runpy.py", line 87, in _run_code
+[1.133s]       exec(code, run_globals)
+[1.133s]     File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_adapter/__main__.py", line 19, in <module>
+[1.133s]       sys.exit(main())
+[1.134s]     File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_adapter/main.py", line 53, in main
+[1.134s]       abs_idl_file = convert_to_idl(
+[1.134s]     File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_adapter/__init__.py", line 19, in convert_to_idl
+[1.134s]       return convert_msg_to_idl(
+[1.134s]     File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_adapter/msg/__init__.py", line 28, in convert_msg_to_idl
+[1.135s]       msg = parse_message_string(package_name, input_file.stem, content)
+[1.135s]     File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_adapter/parser.py", line 516, in parse_message_string
+[1.135s]       Type(type_string, context_package_name=pkg_name),
+[1.135s]     File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_adapter/parser.py", line 276, in __init__
+[1.135s]       super(Type, self).__init__(
+[1.136s]     File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_adapter/parser.py", line 204, in __init__
+[1.136s]       raise InvalidResourceName(
+[1.136s] 
+[1.136s]   rosidl_adapter.parser.InvalidResourceName: 'int' is an invalid message
+[1.136s]   name.  It should have the pattern '^[A-Z][A-Za-z0-9]*$'
+[1.136s] 
+[1.137s] Call Stack (most recent call first):
+[1.137s]   /opt/ros/foxy/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:130 (rosidl_adapt_interfaces)
+[1.137s]   CMakeLists.txt:22 (rosidl_generate_interfaces)
+[1.143s] 
+[1.144s] 
+[1.144s] -- Configuring incomplete, errors occurred!
+[1.144s] See also "/home/ubumtu/robot_ws/build/test_interface/CMakeFiles/CMakeOutput.log".
+[1.144s] Invoked command in '/home/ubumtu/robot_ws/build/test_interface' returned '1': /usr/bin/cmake /home/ubumtu/robot_ws/src/test_interface -DCMAKE_INSTALL_PREFIX=/home/ubumtu/robot_ws/install/test_interface

@@ -1,0 +1,2 @@
+Invoking command in '/home/ubumtu/robot_ws/build/test_interface': /usr/bin/cmake /home/ubumtu/robot_ws/src/test_interface -DCMAKE_INSTALL_PREFIX=/home/ubumtu/robot_ws/install/test_interface
+Invoked command in '/home/ubumtu/robot_ws/build/test_interface' returned '1': /usr/bin/cmake /home/ubumtu/robot_ws/src/test_interface -DCMAKE_INSTALL_PREFIX=/home/ubumtu/robot_ws/install/test_interface

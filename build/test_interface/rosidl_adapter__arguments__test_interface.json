@@ -1,0 +1,9 @@
+{
+  "package_name": "test_interface",
+  "non_idl_tuples": [
+    "/home/ubumtu/robot_ws/src/test_interface:msg/Intfloat.msg",
+    "/home/ubumtu/robot_ws/src/test_interface:srv/AddThreeInts.srv",
+    "/home/ubumtu/robot_ws/src/test_interface:srv/MinusThreeInts.srv",
+    "/home/ubumtu/robot_ws/src/test_interface:action/Fibonacci.action"
+  ]
+}

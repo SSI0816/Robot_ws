@@ -1,0 +1,12 @@
+[0.020s] Invoking command in '/home/ubumtu/robot_ws/build/test_interface': CMAKE_PREFIX_PATH=/home/ubumtu/robot_ws/install/mt_pubsub:/home/ubumtu/robot_ws/install/move_turtle_pkg:/home/ubumtu/robot_ws/install/m_pubsub:/opt/ros/foxy /usr/bin/cmake /home/ubumtu/robot_ws/src/test_interface -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ubumtu/robot_ws/install/test_interface
+[0.040s] -- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.074s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.074s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.300s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.311s] CMake Error at CMakeLists.txt:24 (rosidl_generate_interfaces):
+[0.311s]   Unknown CMake command "rosidl_generate_interfaces".
+[0.311s] 
+[0.312s] 
+[0.312s] -- Configuring incomplete, errors occurred!
+[0.312s] See also "/home/ubumtu/robot_ws/build/test_interface/CMakeFiles/CMakeOutput.log".
+[0.315s] Invoked command in '/home/ubumtu/robot_ws/build/test_interface' returned '1': CMAKE_PREFIX_PATH=/home/ubumtu/robot_ws/install/mt_pubsub:/home/ubumtu/robot_ws/install/move_turtle_pkg:/home/ubumtu/robot_ws/install/m_pubsub:/opt/ros/foxy /usr/bin/cmake /home/ubumtu/robot_ws/src/test_interface -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ubumtu/robot_ws/install/test_interface

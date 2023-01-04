@@ -42,3 +42,55 @@
 * Python opencv 설치 : python3 -m pip install opencv-python
     * 반전, 회전, 색상 변환 기본 동작 시험.
 
+---
+# 2023_1_4
+---
+* 인터페이스
+    * 인터페이스 패키지 만들기 : ros2 pkg create --build-type ament_cmake test_interface
+        * 인터페이스 자료형 : Intfloat.msg(in64 num, float64 sum)
+    * topic, service, action 으로 구분
+    * opt/ros/foxy/share/std_msg/mgs/(파일명) : 지금까지 기본적으로 사용한 Twist, String 등의 위치
+    * interface, node 를 하나의 패키지로 만들면 안됨. -> 패키지를 따로 만들어야 함.
+    * calss 와 같이 대문자로 시작해야 함.
+    * 사전 작업
+    1. msg 파일 생성 후 만들고자 하는 msg파일 생성(Intfloat.msg)
+    2. CMakeLists.txt 파일 아래와 같이 코드 수정.
+    <pre>
+    <code>
+    # find dependencies
+    find_package(ament_cmake REQUIRED)
+    find_package(geometry_msgs REQUIRED)
+    find_package(rosidl_default_generators REQUIRED)
+    # uncomment the following section in order to fill in
+    # further dependencies manually.
+    # find_package(<dependency> REQUIRED)
+
+    rosidl_generate_interfaces(${PROJECT_NAME}
+    "msg/Intfloat.msg"
+    "srv/AddThreeInts.srv"
+    "srv/MinusThreeInts.srv"
+    DEPENDENCIES geometry_msgs
+    )
+    </code>
+    </pre>
+    3. package.xml 파일에 아래와 코드를 수정.
+
+        <buildtool_depend>ament_cmake</buildtool_depend>
+        <buildtool_depend>rosidl_default_generators</buildtool_depend>
+        <exec_depend>rosidl_default_runtime</exec_depend>
+        <member_of_group>rosidl_interface_packages</member_of_group>
+
+* 서비스 패키지 만들기 : ros2 pkg create --build-type ament_python test_num
+    * server, client 노드 실행 :
+        * setup.py에서 service, client 에 대한 엔트리 타임 설정.
+        * server, client 파이썬 코드 작성.
+            * test_num(test_service_client.py, test_service_client_minus.py, test_service_ser1.py)
+        * 터미널 창에서 정상동작(3개의 숫자 더하기, 3개의 숫자 빼기) 확인.
+
+* 액션(피보나치 수열)
+    * test_interface 패키지에 action 폴더 생성 후 Fibonacci.action 파일 생성 및 인터페이스 설정.
+    * server, client 노드 실행 :
+        * setup.py에서 service, client 에 대한 엔트리 타임 설정.
+        * server, client 파이썬 코드 작성.
+            * test_num(fibonacci_action_server.py, fibonacci_action_client.py)
+    *  터미널 창에서 정상동작(피보나치 수열) 확인.
