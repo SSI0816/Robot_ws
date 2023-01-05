@@ -94,3 +94,25 @@
         * server, client 파이썬 코드 작성.
             * test_num(fibonacci_action_server.py, fibonacci_action_client.py)
     *  터미널 창에서 정상동작(피보나치 수열) 확인.
+
+---
+# 2023_1_5
+---
+* 파라미터
+    * turtlesim 을 이용한 파라미터 기본 사용 법 숙지.
+        * ros2 param list : 파라미터 리스트 확인
+        * ros2 param describe /turtlesim background_g : 파라미터 정보 확인
+        * ros2 param set /turtlesim background_g 255 : 파라미터 값 변경
+        * ros2 param dump /turtlesim : 파라미터 저장
+        * ros2 run turtlesim turtlesim_node --ros-args --params-file ./turtlesim.yaml : 저장된 파라미터를 사용하여 turtlesim 구동
+
+    * 파라미터 패키지 만들기 : ros2 pkg create --build-type ament_python test_para
+    * setup.py에서 엔트리 타임 설정(tp).
+    * 파라미터 에서 터미널 텍스트 출력 확인. (test_py_para.py) -> ros run test_para tp
+
+* launch
+    * test_para 패키지 사용.
+    * 3개의 노드를 사용하여 turtlesim 3개 구동.(turtlesim_mimic_launch.py) -> /robot_ws/src/test_para/launch$ ros2 launch turtlesim_mimic_alunch.py
+
+* turtle bot3
+    

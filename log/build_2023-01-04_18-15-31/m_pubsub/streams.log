@@ -1,0 +1,20 @@
+[1.204s] Invoking command in '/home/ubumtu/robot_ws/build/m_pubsub': PYTHONPATH=/home/ubumtu/robot_ws/build/m_pubsub/prefix_override:/home/ubumtu/robot_ws/install/m_pubsub/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/ubumtu/robot_ws/build/m_pubsub/build --no-deps install_data
+[1.514s] running develop
+[1.697s] running egg_info
+[1.698s] writing m_pubsub.egg-info/PKG-INFO
+[1.698s] writing dependency_links to m_pubsub.egg-info/dependency_links.txt
+[1.698s] writing entry points to m_pubsub.egg-info/entry_points.txt
+[1.699s] writing requirements to m_pubsub.egg-info/requires.txt
+[1.699s] writing top-level names to m_pubsub.egg-info/top_level.txt
+[1.741s] reading manifest file 'm_pubsub.egg-info/SOURCES.txt'
+[1.742s] writing manifest file 'm_pubsub.egg-info/SOURCES.txt'
+[1.788s] running build_ext
+[1.789s] Creating /home/ubumtu/robot_ws/install/m_pubsub/lib/python3.8/site-packages/m-pubsub.egg-link (link to .)
+[1.790s] Installing mp script to /home/ubumtu/robot_ws/install/m_pubsub/lib/m_pubsub
+[1.790s] Installing ms script to /home/ubumtu/robot_ws/install/m_pubsub/lib/m_pubsub
+[1.791s] Installing mst script to /home/ubumtu/robot_ws/install/m_pubsub/lib/m_pubsub
+[1.791s] Installing mts script to /home/ubumtu/robot_ws/install/m_pubsub/lib/m_pubsub
+[1.791s] 
+[1.791s] Installed /home/ubumtu/robot_ws/build/m_pubsub
+[1.791s] running install_data
+[1.816s] Invoked command in '/home/ubumtu/robot_ws/build/m_pubsub' returned '0': PYTHONPATH=/home/ubumtu/robot_ws/build/m_pubsub/prefix_override:/home/ubumtu/robot_ws/install/m_pubsub/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/ubumtu/robot_ws/build/m_pubsub/build --no-deps install_data
