@@ -114,5 +114,45 @@
     * test_para 패키지 사용.
     * 3개의 노드를 사용하여 turtlesim 3개 구동.(turtlesim_mimic_launch.py) -> /robot_ws/src/test_para/launch$ ros2 launch turtlesim_mimic_alunch.py
 
-* turtle bot3
+* turtle bot3(burger)
+    * pc 와 turtle bot3 wifi 연결.
+        * 라즈베리파이에 50-clound-init.yaml 파일 생성.
+            <pre>
+            <code>
+            # This file is generated from information provided by the datasource.  Changes
+            # to it will not persist across an instance reboot.  To disable cloud-init's
+            # network configuration capabilities, write a file
+            # /etc/cloud/cloud.cfg.d/99-disable-network-config.cfg with the following:
+            # network: {config: disabled}
+            network:
+            version: 2
+            renderer: networkd
+            ethernets:
+                eth0:
+                dhcp4: true
+                dhcp6: true
+                optional: true
+            wifis:
+                wlan0:
+                dhcp4: true
+                dhcp6: true
+                access-points:
+                    turtle:
+                    password: turtlebot3
+            </code>
+            </pre>
+        * ifconfig : 현재 ip 확인.
+        * sudo apt install nmap : nmap 설치.
+        * nmap -sn 192.168.0.0/24 : 현재 할당되어 있는 ip 확인.
+        * ssh ubuntu@192.168.0.22(터틀봇ip) : 터틀 봇과 pc 연결.
+
+    * turtle bot 3 관련 패키지 다운로드 : https://emanual.robotis.com/docs/en/platform/turtlebot3/quick-start/
     
+* turtle bot 3 키보드 제어.
+    * turtle bot 연결.
+        * sudo nano ~/.bashrc -> export TURTLEBOT3_MODEL=burger 추가.
+        * ros2 launch turtlebot3_bringup robot.launch.py
+    * 제어 pc.
+        * .bashrc 파일-> export TURTLEBOT3_MODEL=burger 추가.
+        * ros2 run turtlebot3_teleop teleop_keyboard
+    * turtle bot 을 pc 에서 키보드 제어 확인.
