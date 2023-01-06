@@ -1,0 +1,3 @@
+[console_scripts]
+tb3m = tb3_move.tb3_basic_move:main
+

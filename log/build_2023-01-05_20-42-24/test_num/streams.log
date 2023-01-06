@@ -1,0 +1,21 @@
+[1.356s] Invoking command in '/home/ubumtu/robot_ws/build/test_num': PYTHONPATH=/home/ubumtu/robot_ws/build/test_num/prefix_override:/home/ubumtu/robot_ws/install/test_num/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/ubumtu/robot_ws/build/test_num/build --no-deps install_data
+[1.686s] running develop
+[1.902s] running egg_info
+[1.902s] writing test_num.egg-info/PKG-INFO
+[1.902s] writing dependency_links to test_num.egg-info/dependency_links.txt
+[1.902s] writing entry points to test_num.egg-info/entry_points.txt
+[1.903s] writing requirements to test_num.egg-info/requires.txt
+[1.903s] writing top-level names to test_num.egg-info/top_level.txt
+[1.961s] reading manifest file 'test_num.egg-info/SOURCES.txt'
+[1.962s] writing manifest file 'test_num.egg-info/SOURCES.txt'
+[2.010s] running build_ext
+[2.011s] Creating /home/ubumtu/robot_ws/install/test_num/lib/python3.8/site-packages/test-num.egg-link (link to .)
+[2.013s] Installing mcm script to /home/ubumtu/robot_ws/install/test_num/lib/test_num
+[2.013s] Installing mfa script to /home/ubumtu/robot_ws/install/test_num/lib/test_num
+[2.014s] Installing mfc script to /home/ubumtu/robot_ws/install/test_num/lib/test_num
+[2.015s] Installing msc script to /home/ubumtu/robot_ws/install/test_num/lib/test_num
+[2.016s] Installing mss script to /home/ubumtu/robot_ws/install/test_num/lib/test_num
+[2.016s] 
+[2.017s] Installed /home/ubumtu/robot_ws/build/test_num
+[2.017s] running install_data
+[2.050s] Invoked command in '/home/ubumtu/robot_ws/build/test_num' returned '0': PYTHONPATH=/home/ubumtu/robot_ws/build/test_num/prefix_override:/home/ubumtu/robot_ws/install/test_num/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/ubumtu/robot_ws/build/test_num/build --no-deps install_data

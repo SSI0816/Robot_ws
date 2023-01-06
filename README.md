@@ -144,10 +144,10 @@
         * ifconfig : 현재 ip 확인.
         * sudo apt install nmap : nmap 설치.
         * nmap -sn 192.168.0.0/24 : 현재 할당되어 있는 ip 확인.
-        * ssh ubuntu@192.168.0.22(터틀봇ip) : 터틀 봇과 pc 연결.
+        * ssh ubuntu@192.168.0.6(터틀봇ip) : 터틀 봇과 pc 연결.
 
     * turtle bot 3 관련 패키지 다운로드 : https://emanual.robotis.com/docs/en/platform/turtlebot3/quick-start/
-    
+
 * turtle bot 3 키보드 제어.
     * turtle bot 연결.
         * sudo nano ~/.bashrc -> export TURTLEBOT3_MODEL=burger 추가.
@@ -155,4 +155,35 @@
     * 제어 pc.
         * .bashrc 파일-> export TURTLEBOT3_MODEL=burger 추가.
         * ros2 run turtlebot3_teleop teleop_keyboard
-    * turtle bot 을 pc 에서 키보드 제어 확인.
+    * turtle bot 3를 pc 에서 키보드 제어 확인.
+
+---
+# 2023_1_5
+---
+* pc 에서 turtle bot 3 라파로 접근
+    * 노틸러스 사용
+    * other locations -> connection to server -> sftp://192.168.0.6(turtlebot의ip)
+
+* pc와 turtle bot 3 통신 중 사용되는 topic
+    * battary state : 베터리 잔량.
+    * cmd vel : 터틀 봇 움직임.
+    * joint : 바퀴의 각도 확인.
+    * odm : 시작 위치로 부터 얼마나 떨어져 있는지 확인.
+    * scan : 레이저 센서로 각도에서 오는 값을 읽어서 거리 측정 가능.
+    * tf : 3차원 공간에서 x,y,z 값, 지면으로 부터 얼마나 떨어져 있는지 측정 가능.
+
+* 패키지에서 노드로 터틀봇 제어.
+    * 제어 pc
+        * 패키지 생성: ros2 pkg create --build-type ament_python tb3_move
+        * node 코드 작성(tb3_basic_move.py) : linear.x, angular.z 값으로 움직임 제어(topic : vmd_vel).
+        * setup.py에서 node 에 대한 엔트리 타임 설정(tb3m).
+        * 터미널 창 : ros2 run tb3_move tb3m
+        * 멈추고 싶은 경우 : ros2 run turtlebot3_teleop teleop_keyboard
+    * turtle bot 3
+        * ros2 launch turtlebot3_bringup robot.launch.py
+
+* turtle bot 3 카메라 설정
+    *  문제 해결 중
+
+* slam 설정
+    * https://emanual.robotis.com/docs/en/platform/turtlebot3/slam/#run-slam-node
