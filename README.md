@@ -212,4 +212,3 @@
     * sudo add-apt-repository ppa:ubuntu-pi-flavour-makers/ppa 파이캠 필요한 라이브러리
     * sudo apt install libraspberrypi-bin libraspberrypi-dev 파이캠 필요한 라이브러리   
         -> error 발생 : sudo apt-get update, sudo apt-get upgrade 실행   
-        -> 
