@@ -187,3 +187,29 @@
 
 * slam 설정
     * https://emanual.robotis.com/docs/en/platform/turtlebot3/slam/#run-slam-node
+
+* navigation 설정
+    * https://emanual.robotis.com/docs/en/platform/turtlebot3/navigation/#run-navigation-nodes
+
+---
+# 2023_1_9
+---
+* simulation
+    * gazebo : https://emanual.robotis.com/docs/en/platform/turtlebot3/simulation/#gazebo-simulation
+    * slam : https://emanual.robotis.com/docs/en/platform/turtlebot3/slam_simulation/
+    * navigation : https://emanual.robotis.com/docs/en/platform/turtlebot3/nav_simulation/   
+        -> gazebo 를 사용하여 가상의 맵을 형성   
+        -> slam 을 사용하여 맵의 지도를 작성 및 저장   
+        -> navigation 을 이용하여 동작 확인.
+
+* 프로젝트 아이디어 회의
+    * google slide : https://docs.google.com/presentation/d/1_tC2GGcQ1quFyGeajHxiugFS1wR6vpighWsBEbJgPas/edit?usp=sharing
+    * github : https://github.com/SSI0816/project-jj
+
+* turtle bot 3 카메라 설정
+    * git clone https://github.com/christianrauch/raspicam2_node.git
+    * sudo apt autoremove --purge libgles2-mesa-dev mesa-common-dev 충돌하는 비디오제거
+    * sudo add-apt-repository ppa:ubuntu-pi-flavour-makers/ppa 파이캠 필요한 라이브러리
+    * sudo apt install libraspberrypi-bin libraspberrypi-dev 파이캠 필요한 라이브러리   
+        -> error 발생 : sudo apt-get update, sudo apt-get upgrade 실행   
+        -> 
