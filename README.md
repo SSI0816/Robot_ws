@@ -207,8 +207,40 @@
     * github : https://github.com/SSI0816/project-jj
 
 * turtle bot 3 카메라 설정
+    * 기존의 turtle bot의 sd 카드를 교체.
     * git clone https://github.com/christianrauch/raspicam2_node.git
     * sudo apt autoremove --purge libgles2-mesa-dev mesa-common-dev 충돌하는 비디오제거
     * sudo add-apt-repository ppa:ubuntu-pi-flavour-makers/ppa 파이캠 필요한 라이브러리
     * sudo apt install libraspberrypi-bin libraspberrypi-dev 파이캠 필요한 라이브러리   
-        -> error 발생 : sudo apt-get update, sudo apt-get upgrade 실행   
+        -> 에러 발생 : sudo apt-get update, sudo apt-get upgrade 실행   
+        -> 에러 수정.
+
+---
+# 2023_1_10
+---        
+* turtle bot 3 카메라 설정
+    * turtle bot 기체 변경.
+    * sudo usermod -a -G video ubuntu 카메라 유저권한 접근성 등록.
+    * sudo apt-get install v4l-utils
+    * v4l2-ctl --list-devices 카메라 잡히는지 확인.
+    * df -h #Find your device numbert 디바이스 확인.
+    * wget https://archive.raspberrypi.org/debian/pool/main/r/raspi-config/raspi-config_20160527_all.deb -P /tmp 라스피컨피그 설치
+    * sudo apt-get install libnewt0.52 whiptail parted triggerhappy lua5.1 alsa-utils -y 라스피컨피크 설치
+    * sudo apt-get install -fy
+    * sudo dpkg -i /tmp/raspi-config_20160527_all.deb
+    * /boot/firmware/config.txt 파일 맨 밑에 추가
+        <pre>
+        <code>
+        start_x=1   
+		gpu_mem=128
+        </code>
+        </pre>
+    * rqt 로 확인시 bgr8 변환 과정에서 에러 발생   
+        ->  sudo apt install ros-foxy-image-transport*   
+        -> 애러 수정.
+    * rqt 로 정상 동작 확인.
+
+* GPIO
+    * sudo apt-get install python-dev
+    * sudo apt-get install python-rpi.gpio
+    * led, 서보모터(SG90), 부저를 아두이노에 장착하여 동작 확인.
